@@ -7,31 +7,38 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
     
-    <EditText
-        android:layout_marginTop="30dp"
-        android:id="@+id/yourPhoneNum"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="전화 벌 번호 입력"
-        android:inputType="phone"/>
-    
+
     <LinearLayout
-        android:padding="30dp"
+        android:padding="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_vertical">
-         <TextView
+        android:orientation="horizontal">
+        <EditText
             android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:id="@+id/yourPhoneNum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DIAL 예제"/>
+            android:hint="전화 걸 번호 입력"
+            android:inputType="phone"/>
         <Button
             android:id="@+id/dialBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="전화걸기"/>
-        
-        
+            android:text="전화걸기"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/callBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화바로걸기"
+            android:layout_gravity="center"/>
     </LinearLayout>
+
+
+
+
+
+
 </LinearLayout>
