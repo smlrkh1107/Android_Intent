@@ -35,6 +35,66 @@
             android:text="전화바로걸기"
             android:layout_gravity="center"/>
     </LinearLayout>
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="문자보내기 예제"
+            android:singleLine="true"/>
+        <Button
+            android:id="@+id/smsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="문자보내기"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="외부사이트 열기(네이버)"
+            android:singleLine="true"/>
+        <Button
+            android:id="@+id/naverBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="네이버"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="PLAY STORE 다운링크 가기(카카오)"
+            android:singleLine="true"/>
+        <Button
+            android:id="@+id/kakaoAppBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카카오 설치"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
 
 
 

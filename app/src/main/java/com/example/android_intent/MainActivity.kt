@@ -29,6 +29,27 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
 
+        smsBtn.setOnClickListener {
+            val inputPhoneNum = yourPhoneNum.text.toString()
+            val myUri = Uri.parse("smsto:${inputPhoneNum}")
+            var myIntent = Intent(Intent.ACTION_SENDTO, myUri)
+            startActivity(myIntent)
+        }
+
+
+        naverBtn.setOnClickListener {
+            val myUri = Uri.parse("https://naver.com")
+            var myIntent = Intent(Intent.ACTION_VIEW, myUri)
+            startActivity(myIntent)
+        }
+
+
+        kakaoAppBtn.setOnClickListener {
+            val myUri = Uri.parse("market://details?id=com.kakao.talk")
+            var myIntent = Intent(Intent.ACTION_VIEW, myUri)
+            startActivity(myIntent)
+        }
+
 
     }
 
